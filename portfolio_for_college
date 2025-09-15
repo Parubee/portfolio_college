@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { font-size: 24px; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #00adb5; }
+
+    /* Hero Section */
+    #hero {
+      height: 100vh;
+      background: linear-gradient(to right, #00adb5, #393e46);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+    #hero h2 { font-size: 48px; margin-bottom: 10px; }
+    #hero p { font-size: 20px; margin-bottom: 20px; }
+    #hero button {
+      padding: 10px 20px;
+      border: none;
+      background: #fff;
+      color: #00adb5;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    #hero button:hover { background: #00adb5; color: #fff; }
+
+    /* Sections */
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #00adb5;
+    }
+
+    /* About */
+    #about p { text-align: center; font-size: 18px; }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Contact */
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: auto;
+    }
+    #contact input, #contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #contact button {
+      background: #00adb5;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #contact button:hover { background: #393e46; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <h2>Hello, I'm <span style="color:#ffde59;">Paravthi KB</span></h2>
+    <p>Aspiring Software Developer | Backend Enthusiast | Problem Solver</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate developer who loves building web applications, solving coding challenges, and continuously learning new technologies.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">FastAPI</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects & Achivements</h2>
+    <div class="projects">
+      <div class="project">
+        <h3> MANGA PLUS </h3>
+        <p> Manga plus is a platform where users can read mangas(books) with many chapters and admins can upload these books.</p>
+      </div>
+      <div class="project">
+        <h3>Safe Circle</h3>
+        <p>An emergency alert app which will alert when an emergency occur.</p>
+      </div>
+      <div class="project">
+        <h3>Internship</h3>
+        <p>Done an Internship at Quadance technologies pvt at Technopark for one month.</p>
+        <div class="project"></div>
+         <h3>Top 5 projects</h3>
+        <p>One of my project got into top 5 projects in Indian Startup League</p>
+         <div class="project"></div>
+        <h3> Smart India Hackaton </h3>
+        <p>Got 2nd place in Smart India Hackaton at College level.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your mail" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple JS for form
+    function sendMessage(e) {
+      e.preventDefault();
+      alert("Message Sent Successfully!");
+    }
+  </script>
+
+</body>
+</html>
